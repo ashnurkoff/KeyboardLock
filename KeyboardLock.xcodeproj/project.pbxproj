@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011A27D07A96837E704E9E15 /* KeyboardEventFilterPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531164793EFAE9E18311709 /* KeyboardEventFilterPolicy.swift */; };
+		2CAD16425020F5244F502227 /* KeyboardLockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BC21B485ACD54C17097A84 /* KeyboardLockApp.swift */; };
+		40F5EF5A0E69DACC78AC6797 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE6C5A26F91254FD3F9DCDE /* AppState.swift */; };
+		4847ED94236B29597D190825 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF31E12E2F094397728A9A6 /* MenuBarView.swift */; };
+		5A52D6ECDA3AB2B426A65F83 /* LockScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC3AE85119BD805029D6EB3 /* LockScreenView.swift */; };
+		5AC07FE5472B3FFA2D58EAF5 /* UnlockPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666B869E55F71CCD802D2600 /* UnlockPolicy.swift */; };
+		A5434FDD5AA6AF74F1BC061D /* KeyboardBlocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F9613DDF7E30BC8EDE5EA /* KeyboardBlocker.swift */; };
+		AE16DA02C7BFFCE5136DC983 /* KeyboardEventFilterPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B942316A1729F3D693361A1C /* KeyboardEventFilterPolicyTests.swift */; };
+		B6795C22BDAB84106B08242F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC1611293DB18F1E9811EB6 /* Assets.xcassets */; };
+		C421C9425A10FA9813F6E16F /* UnlockPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6F888FD8655C8F726D846F /* UnlockPolicyTests.swift */; };
+		C99C82EB716138B66E6BFFE0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = CC16587FABAB709CB46A7F0B /* PrivacyInfo.xcprivacy */; };
+		EB7B53003E103B3350BECF1E /* LockPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622F28E5030F701B6DC6D5FF /* LockPanelController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		797AB8833DC4947832972346 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD3C447F78C4BFE53EF61EF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C810771A26ACC8016D516E10;
+			remoteInfo = KeyboardLock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01D91192A6367F58840D7955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		26BC21B485ACD54C17097A84 /* KeyboardLockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLockApp.swift; sourceTree = "<group>"; };
+		3531164793EFAE9E18311709 /* KeyboardEventFilterPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardEventFilterPolicy.swift; sourceTree = "<group>"; };
+		4AC3AE85119BD805029D6EB3 /* LockScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenView.swift; sourceTree = "<group>"; };
+		4B787516117989E3139BF6E7 /* KeyboardLockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C6F9613DDF7E30BC8EDE5EA /* KeyboardBlocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBlocker.swift; sourceTree = "<group>"; };
+		622F28E5030F701B6DC6D5FF /* LockPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockPanelController.swift; sourceTree = "<group>"; };
+		666B869E55F71CCD802D2600 /* UnlockPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockPolicy.swift; sourceTree = "<group>"; };
+		6AF31E12E2F094397728A9A6 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		9EC1611293DB18F1E9811EB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B942316A1729F3D693361A1C /* KeyboardEventFilterPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardEventFilterPolicyTests.swift; sourceTree = "<group>"; };
+		BD6F888FD8655C8F726D846F /* UnlockPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockPolicyTests.swift; sourceTree = "<group>"; };
+		BFE6C5A26F91254FD3F9DCDE /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		CC16587FABAB709CB46A7F0B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		CFC0E09C47A73B9E13679E13 /* KeyboardLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1004E6278047DEB9F5DF0FFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9EC1611293DB18F1E9811EB6 /* Assets.xcassets */,
+				01D91192A6367F58840D7955 /* Info.plist */,
+				CC16587FABAB709CB46A7F0B /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1887216EEAB4869A31925A94 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4C6F9613DDF7E30BC8EDE5EA /* KeyboardBlocker.swift */,
+				3531164793EFAE9E18311709 /* KeyboardEventFilterPolicy.swift */,
+				666B869E55F71CCD802D2600 /* UnlockPolicy.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4A15A8E547D243E4C455E692 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				622F28E5030F701B6DC6D5FF /* LockPanelController.swift */,
+				565EF4C53D574F2BFE67DFB0 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5073C28910B4736A77EFD1A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFC0E09C47A73B9E13679E13 /* KeyboardLock.app */,
+				4B787516117989E3139BF6E7 /* KeyboardLockTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		565EF4C53D574F2BFE67DFB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4AC3AE85119BD805029D6EB3 /* LockScreenView.swift */,
+				6AF31E12E2F094397728A9A6 /* MenuBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8AEC9F5B5AC957DFE3A7136 /* KeyboardLock */ = {
+			isa = PBXGroup;
+			children = (
+				C29647C89006194054879D8A /* App */,
+				1887216EEAB4869A31925A94 /* Core */,
+				1004E6278047DEB9F5DF0FFF /* Resources */,
+				4A15A8E547D243E4C455E692 /* UI */,
+			);
+			path = KeyboardLock;
+			sourceTree = "<group>";
+		};
+		AE69938D0D86E274E5D19C9B /* KeyboardLockTests */ = {
+			isa = PBXGroup;
+			children = (
+				B942316A1729F3D693361A1C /* KeyboardEventFilterPolicyTests.swift */,
+				BD6F888FD8655C8F726D846F /* UnlockPolicyTests.swift */,
+			);
+			path = KeyboardLockTests;
+			sourceTree = "<group>";
+		};
+		C29647C89006194054879D8A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BFE6C5A26F91254FD3F9DCDE /* AppState.swift */,
+				26BC21B485ACD54C17097A84 /* KeyboardLockApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EE5E3E7D7E66A1910A107E1C = {
+			isa = PBXGroup;
+			children = (
+				A8AEC9F5B5AC957DFE3A7136 /* KeyboardLock */,
+				AE69938D0D86E274E5D19C9B /* KeyboardLockTests */,
+				5073C28910B4736A77EFD1A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D5A6CE565C7376745363238 /* KeyboardLockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 526604F9A4545DE6D194DE59 /* Build configuration list for PBXNativeTarget "KeyboardLockTests" */;
+			buildPhases = (
+				066950140C39B327F034DFA8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				584DA0EBE4457E30CA6194BF /* PBXTargetDependency */,
+			);
+			name = KeyboardLockTests;
+			packageProductDependencies = (
+			);
+			productName = KeyboardLockTests;
+			productReference = 4B787516117989E3139BF6E7 /* KeyboardLockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C810771A26ACC8016D516E10 /* KeyboardLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A27F1A1CBA8C89D1AD21FF2 /* Build configuration list for PBXNativeTarget "KeyboardLock" */;
+			buildPhases = (
+				827CEDC52E11B69F98EC4E02 /* Sources */,
+				DF2D27D85E8F01641CB64378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyboardLock;
+			packageProductDependencies = (
+			);
+			productName = KeyboardLock;
+			productReference = CFC0E09C47A73B9E13679E13 /* KeyboardLock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD3C447F78C4BFE53EF61EF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6D5A6CE565C7376745363238 = {
+						ProvisioningStyle = Automatic;
+					};
+					C810771A26ACC8016D516E10 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6089B0EE44E9C1EA58ECBA3E /* Build configuration list for PBXProject "KeyboardLock" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EE5E3E7D7E66A1910A107E1C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5073C28910B4736A77EFD1A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C810771A26ACC8016D516E10 /* KeyboardLock */,
+				6D5A6CE565C7376745363238 /* KeyboardLockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF2D27D85E8F01641CB64378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6795C22BDAB84106B08242F /* Assets.xcassets in Resources */,
+				C99C82EB716138B66E6BFFE0 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		066950140C39B327F034DFA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE16DA02C7BFFCE5136DC983 /* KeyboardEventFilterPolicyTests.swift in Sources */,
+				C421C9425A10FA9813F6E16F /* UnlockPolicyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		827CEDC52E11B69F98EC4E02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F5EF5A0E69DACC78AC6797 /* AppState.swift in Sources */,
+				A5434FDD5AA6AF74F1BC061D /* KeyboardBlocker.swift in Sources */,
+				011A27D07A96837E704E9E15 /* KeyboardEventFilterPolicy.swift in Sources */,
+				2CAD16425020F5244F502227 /* KeyboardLockApp.swift in Sources */,
+				EB7B53003E103B3350BECF1E /* LockPanelController.swift in Sources */,
+				5A52D6ECDA3AB2B426A65F83 /* LockScreenView.swift in Sources */,
+				4847ED94236B29597D190825 /* MenuBarView.swift in Sources */,
+				5AC07FE5472B3FFA2D58EAF5 /* UnlockPolicy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		584DA0EBE4457E30CA6194BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C810771A26ACC8016D516E10 /* KeyboardLock */;
+			targetProxy = 797AB8833DC4947832972346 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		004EAFFA9104CF87E486AC27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KeyboardLock/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexshnurkov.KeyboardLock;
+				PRODUCT_NAME = KeyboardLock;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2645D8D1867FF286A3C982FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KeyboardLock/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexshnurkov.KeyboardLock;
+				PRODUCT_NAME = KeyboardLock;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		28E19FCB64984893323A8074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2B668DDE0D76E8C50378A61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexshnurkov.KeyboardLockTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyboardLock.app/Contents/MacOS/KeyboardLock";
+			};
+			name = Debug;
+		};
+		A5CE1CB93716E4A72669D663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexshnurkov.KeyboardLockTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyboardLock.app/Contents/MacOS/KeyboardLock";
+			};
+			name = Release;
+		};
+		CECDE01B1A4540946F6ECD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		526604F9A4545DE6D194DE59 /* Build configuration list for PBXNativeTarget "KeyboardLockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B668DDE0D76E8C50378A61B /* Debug */,
+				A5CE1CB93716E4A72669D663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6089B0EE44E9C1EA58ECBA3E /* Build configuration list for PBXProject "KeyboardLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECDE01B1A4540946F6ECD41 /* Debug */,
+				28E19FCB64984893323A8074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9A27F1A1CBA8C89D1AD21FF2 /* Build configuration list for PBXNativeTarget "KeyboardLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2645D8D1867FF286A3C982FF /* Debug */,
+				004EAFFA9104CF87E486AC27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD3C447F78C4BFE53EF61EF5 /* Project object */;
+}

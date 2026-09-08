@@ -1,0 +1,100 @@
+name: Bug report
+description: Report reproducible incorrect behavior in KeyboardLock
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Do not include passwords, typed text, fingerprints, credentials, or other sensitive data.
+
+  - type: input
+    id: version
+    attributes:
+      label: KeyboardLock version
+      description: Provide a release version or Git commit.
+      placeholder: v1.0.0 or abc1234
+    validations:
+      required: true
+
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: macOS 15.6
+    validations:
+      required: true
+
+  - type: input
+    id: hardware
+    attributes:
+      label: Mac and keyboard
+      description: Include the Mac model and whether the keyboard is built in or external.
+      placeholder: MacBook Air M3, built-in keyboard
+    validations:
+      required: true
+
+  - type: dropdown
+    id: accessibility
+    attributes:
+      label: Accessibility permission
+      options:
+        - Granted
+        - Not granted
+        - Unsure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: touch_id
+    attributes:
+      label: Touch ID availability
+      options:
+        - Available and configured
+        - Available but not configured
+        - Not available
+        - Unsure
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the smallest repeatable sequence. Describe key categories instead of pasting typed content.
+      placeholder: |
+        1. Select a one-minute timer
+        2. Choose Lock keyboard
+        3. Press a media key
+        4. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add only information relevant to reproducing the issue.
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Privacy check
+      options:
+        - label: I have removed typed content, passwords, credentials, biometric information, and other sensitive data.
+          required: true

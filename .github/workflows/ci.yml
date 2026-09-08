@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    name: Build and test
+    runs-on: macos-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Verify generated project
+        run: |
+          make generate
+          git diff --exit-code -- KeyboardLock.xcodeproj
+
+      - name: Run unit tests
+        run: make test DERIVED_DATA=build-ci
+
+      - name: Build universal app
+        run: make build DERIVED_DATA=build-ci
+
+      - name: Verify architectures
+        run: |
+          lipo -verify_arch arm64 x86_64 \
+            build-ci/Build/Products/Release/KeyboardLock.app/Contents/MacOS/KeyboardLock
+
+      - name: Run static analyzer
+        run: make analyze DERIVED_DATA=build-ci

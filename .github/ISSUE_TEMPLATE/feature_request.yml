@@ -1,0 +1,41 @@
+name: Feature request
+description: Suggest a focused improvement to KeyboardLock
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the cleaning workflow or safety problem first. Features must preserve mouse access, automatic recovery, and the privacy model.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is difficult or impossible today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Explain the desired behavior, including how the user can always unlock.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+
+  - type: checkboxes
+    id: invariants
+    attributes:
+      label: Safety and privacy
+      options:
+        - label: The proposal keeps mouse or trackpad input available.
+          required: true
+        - label: The proposal does not require collecting keystrokes or biometric data.
+          required: true
