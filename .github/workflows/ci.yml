@@ -39,8 +39,9 @@ jobs:
 
       - name: Verify architectures
         run: |
-          lipo -verify_arch arm64 x86_64 \
-            build-ci/Build/Products/Release/KeyboardLock.app/Contents/MacOS/KeyboardLock
+          lipo \
+            build-ci/Build/Products/Release/KeyboardLock.app/Contents/MacOS/KeyboardLock \
+            -verify_arch arm64 x86_64
 
       - name: Run static analyzer
         run: make analyze DERIVED_DATA=build-ci
